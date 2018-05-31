@@ -9,9 +9,9 @@ ENV SOLR_USER="solr" \
     SOLR_UID="8983" \
     SOLR_GROUP="solr" \
     SOLR_GID="8983" \
-    SOLR_VERSION="4.10.4" \
-    SOLR_URL="${SOLR_DOWNLOAD_SERVER:-https://archive.apache.org/dist/lucene/solr}/4.10.4/solr-4.10.4.tgz" \
-    SOLR_SHA256="ac3543880f1b591bcaa962d7508b528d7b42e2b5548386197940b704629ae851" \
+    SOLR_VERSION="4.10.3" \
+    SOLR_URL="${SOLR_DOWNLOAD_SERVER:-https://archive.apache.org/dist/lucene/solr}/4.10.3/solr-4.10.3.tgz" \
+    SOLR_SHA256="ac7024a0a759c6c53cc3a66b3a84757d599d350f491eb221160613356532e2b6" \
     PATH="/opt/solr/bin:/opt/docker-solr/scripts:$PATH"
 
 RUN groupadd -r --gid $SOLR_GID $SOLR_GROUP && \

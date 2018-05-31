@@ -1,4 +1,9 @@
 
+This is a fork of https://github.com/docker-solr/docker-solr4/ to use Solr version **4.10.3**.
+
+
+
+-------------------------------------------------------------------------
 If you want to run Solr under Docker, you should use the latest version.
 See https://hub.docker.com/_/solr/
 
@@ -9,11 +14,13 @@ will be no updates, and there is no build for it on Docker hub.
 To build:
 
 ```
-docker build -t solr4 .
+docker build -t solr4-10-3 .
 ```
 
 To run:
 
 ```
-docker run -P solr4
+docker run -p 8983:8983 -d solr4-10-3
 ```
+
+Open Admin UI at `http://localhost:8983/solr/#/`
